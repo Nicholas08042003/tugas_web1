@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website Test Paranorma</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="logo">logo</a>
+            <ul>
+                <li><a href="#" class=":active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <!-- <h2 id="text">Moon Light</h2> -->
+            <a href="sec" id="btn">Explore</a>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+
+        <div class="sec" id="sec">
+            <h2>The new currency "TitanCoin"</h2>
+            <p>adalah salah satu cryptocurrency yang disebut sebagai titancoin karena dibuat hanya dengan tujuan penukaran uang dari game ke dunia nyata, lengkap dengan logo titannya yang sempat viral di dunia peranimean. 
+                titan adalah coin pertama yang dibuat dalam dunia game ke dunia asli. 
+
+                Titan sendiri diluncurkan pada agustus 2022 sebagai bentuk penghargaan bagi komunitas gamer yang pada saat ini,agar para gamer bisa mencari uang melalui game. 
+               titan di buat agar stigma masyrakat tentang gamer berubah,di mana jaman sekarang masih gamer di anggap sebagai seorang pengangguran yang hanya menghabiskan waktu untuk bermain game saja.
+
+               dengan adanya Titan para gamer di mudahkan dalam mencari uang dalam dunia game dan menukarkan uang di dalam game tersebut menjadi mata uang crypto.
+               crpyto sendiri adalah mata uang virtual yang di jamin oleh cryptography definis lain dari mata uang kripto adalah mata uang yang digunakan untuk bertransaksi satu dengan orang lain secara online
+            </p>
+        
+           <div class="service">
+            <div class="title">
+                <h2>our servis</h2>
+            </div>
+
+            <div class="box">
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h5> web deveploment</h5>
+                    <div class="pra">
+                        <p>sedang makan rendang dan nasi goreng walaupun tanpa bawang goreng</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">read more</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-user"></i>
+                    <h5> web deveploment</h5>
+                    <div class="pra">
+                        <p>sedang makan rendang dan nasi goreng walaupun tanpa bawang goreng</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">read more</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-bell"></i>
+                    <h5> web deveploment</h5>
+                    <div class="pra">
+                        <p>sedang makan rendang dan nasi goreng walaupun tanpa bawang goreng</p>
+
+                        <p style="text-align: center;">
+                            <a class="button" href="#">read more</a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                 <div class="footer__content" style="display:block;text-align:center">
+                    <div>
+                        <div class="text-wrap footer-credits comic-neue">
+                             <span>
+                                 <a>Contributors</a>
+                             </span>
+                        </div>
+                           <p style="text-align:center">© 2013-2022 | The TitanCoin Foundation &amp; TitanCoin Project. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <script>
+            let stars =  document.getElementById('stars');
+            let moon=  document.getElementById('moon');
+            let mountains_behind =  document.getElementById('mountains_behind');
+            let text =  document.getElementById('text');
+            let btn=  document.getElementById('btn');
+            let mountains_front =  document.getElementById('mountains_front');
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 +'px';
+                text.style.marginRight = value * 4 +'px';
+                text.style.marginTop = value * 1.3 +'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
